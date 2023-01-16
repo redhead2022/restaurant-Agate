@@ -1,7 +1,7 @@
 # restaurant-Agate
 restaurant website_HTML_CSS_SCSS
 
-Welcome to my page!
+### :woman_technologist: About Me : Welcome to my page!
 
 Project includes:
 - HTML;
