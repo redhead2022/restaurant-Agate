@@ -1,0 +1,24 @@
+.dishes {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1024px) {
+    .dishes {
+        margin-bottom: 45px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .dishes {
+        margin-bottom: 50px
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dishes {
+        flex-direction: column;
+        margin-bottom: 45px;
+    }
+}

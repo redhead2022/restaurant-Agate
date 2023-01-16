@@ -1,0 +1,56 @@
+.menu {
+    display: flex;
+    align-items: center;
+    &__link {
+        color: $base-color;
+        font-size: $menu-font;
+        line-height: 28px;
+        &:not(:last-child) {
+            margin-right: 25px;
+        }
+        &:not(:last-child)::after {
+            content: "";
+            display: inline-block;
+            width: 1.5px;
+            height: 16px;
+            margin-left: 25px;
+            background-color: $menu-border-color;
+        }
+        &:hover {
+            color: $new-color;
+            transition: all 1s linear .5s;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .menu {
+        &__link {
+            font-size: $description-font;
+            line-height: 23px;
+            &:not(:last-child)::after {
+                height: 13px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .menu {
+        &__link {
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+            &:not(:last-child)::after {
+                margin-left: 10px;
+                width: 1px;
+            }
+        }
+    }
+}

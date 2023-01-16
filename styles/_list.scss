@@ -1,0 +1,46 @@
+.list {
+    list-style-type: none;
+    font-size: $list-font;
+    font-weight: $light-font;
+    line-height: 50px;
+    margin: 0 0 60px;
+    &__item {
+        a {
+            color: $base-color;
+            &:hover {
+                color: $button-up-color;
+                transition: all 2s linear .5s;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .list {
+        font-size: $base-font;
+        line-height: 35px;
+        margin: 0 0 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .list {
+        font-size: $menu-font;
+        line-height: 31px;
+        margin: 0 0 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .list {
+        font-size: $button-font;
+        line-height: 25px;
+        margin: 0 0 30px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .list {
+        font-size: $button-middle;
+    }
+}

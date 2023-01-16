@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/70d24109df.js" crossorigin="anonymous"></script>
+    <title>Ресторан AGATE</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Serif+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <body>
+        <div class="background">
+            <header class="header">
+                <a href="#contacts" class="logo">AGATE</a>
+                <nav class="menu">
+                    <a href="#about-us" class="menu__link" aria-label="описание ресторан">О ресторане</a>
+                    <a href="#menu-list" class="menu__link" aria-label="меню ресторана">Меню</a>
+                    <a href="#contacts" class="menu__link" aria-label="контакты">Контакты</a>
+                </nav>
+            </header>
+
+            <section class="banner">
+                <h1 class="banner__title">РЕСТОРАН АВТОРСКОЙ КУХНИ</h1>
+                <p class="banner__description">Легкая атмосфера, европейская и азиатская кухня</p>
+                <a href="#contacts" class="btn btn--white" aria-label="кнопка для связи">Связаться с нами</a>
+            </section>
+        </div>
+
+        <main>
+            <section id="about-us" class="holder">
+                <p class="holder__description">Мы понравимся вам своей легкой атмосферой, уровнем кухни и подачей блюд. Мы любим аристократичную простоту в интерьере, хорошую музыку и неповторимый ризотто нашего шефа, Максима Болова.</p>
+            </section>
+
+            <section class="pictures">
+                <div class="container">
+                    <div class="item"><img class="item__image" src="img/picture-flowers.png" alt="flowers"></div>
+                    <div class="item"><img class="item__image" src="img/picture-dishes.png" alt="dishes"></div>
+                    <div class="item"><img class="item__image" src="img/picture-soup.png" alt="soup"></div>
+                    <div class="item"><img class="item__image" src="img/picture-tomatoes.png" alt="tomatoes"></div>
+                    <div class="item"><img class="item__image" src="img/picture-room.png" alt="room"></div>
+                    <div class="item"><img class="item__image" src="img/picture-cake.png" alt="cake"></div>
+                </div>
+            </section>
+
+            <section class="box">
+                <h3 class="caption">Избранные блюда нашего меню</h3>
+                <p class="box__description">Осеннее меню от шеф-повара</p>
+
+                <div id="menu-list" class="dishes">
+                    <article class="column column--red">
+                        <div class="column__image"><img class="column__picture" src="img/pumpkin-soup.png" alt="pumpkin soup"></div>
+                        <div class="column__text">
+                            <h4 class="column__subtitle">Тыквенный суп</h4>
+                            <p class="column__description">Осенний тыквенный суп. В игридиентах тыква, шампиньоны, щепотка мускатного ореха.</p>
+                            <span class="column__cost">1980р.</span>
+                        </div>
+                    </article>
+
+                    <article class="column column--green">
+                        <div class="column__image"><img class="column__picture" src="img/pasta.png" alt="pasta"></div>
+                        <div class="column__text">
+                            <h4 class="column__subtitle">Парпаделле</h4>
+                            <p class="column__description">Итальянская паста с богатым вкусом свеклы и томатным песто, подается с базиликом и горошком.</p>
+                            <span class="column__cost">1400р.</span>
+                        </div>
+                    </article>
+
+                    <article class="column column--yellow">
+                        <div class="column__image"><img class="column__picture" src="img/salad.png" alt="salad"></div>
+                        <div class="column__text">
+                            <h4 class="column__subtitle">Линч салат</h4>
+                            <p class="column__description">Питательный утренний салат - это просто белковая бомба для любителей фитнеса.</p>
+                            <span class="column__cost">1300р.</span>
+                        </div>
+                    </article>
+                </div>
+
+                <a href="#menu-list" class="btn btn--black" aria-label="перейти к меню">Посмотреть меню</a>
+            </section>
+
+            <section class="chef">
+                <div class="chef__block"><img class="chef__image" src="img/chef.png" alt="chef"></div>
+                <h3 class="caption">Максим Болов</h3>
+                <p class="chef__description">Шеф-повар AGATE</p>
+                <p class="chef__paragraph">Максим - ученик известного шеф-повара Ерика Крауа. Принимает участие в крупнейших воркшопах, работал в ресторанах Франции, Бельгии и Финляндии. У Максима всегда свежее авторское видение меню.</p>
+            </section>
+        </main>
+
+        <footer class="contacts">
+            <h2 class="contacts__slogan">Свяжитесь с нами</h2>
+
+            <ul id="contacts" class="list">
+                <li class="list__item"><a href="tel:+11234567890" target="_blank" aria-label="номер телефона">+1 123 456 78 90</a></li>
+                <li class="list__item"><a href="mailto:agate@yandex.com" target="_blank" aria-label="e-mail">agate@yandex.com</a></li>
+                <li class="list__item"><a href="https://goo.gl/maps/KGjP6s2t2mb1Yw2C8" target="_blank" aria-label="адрес">Обводной канал, 75а. Санкт-Петербург</a></li>
+            </ul>
+
+            <p class="contacts__description">Мы открыты ежедневно в 12:00 - 12:00</p>
+
+            <div class="social">
+                <a class="social__link" href="https://www.facebook.com/" target="_blank" aria-label="связаться в facebook"><i class=" fab fa-facebook-f " aria-hidden="true "></i></a>
+                <a class="social__link " href="https://twitter.com/ " target="_blank" aria-label="связаться в twitter"><i class="fab fa-twitter " aria-hidden="true "></i></a>
+                <a class="social__link " href="https://www.instagram.com/ " target="_blank" aria-label="связаться в instagram"><i class="fab fa-instagram " aria-hidden="true "></i></a>
+            </div>
+
+            <a class="button " href="# " id="button "></a>
+        </footer>
+    </body>
+
+</html>

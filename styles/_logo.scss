@@ -1,0 +1,17 @@
+.logo {
+    color: $base-color;
+    font-size: $logo-font;
+    line-height: 63px;
+    &:hover {
+        color: $hit-color;
+        transform: scale(1.2);
+        transition: all 1s linear .5s;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .logo {
+        font-size: $list-font;
+        line-height: 44px;
+    }
+}

@@ -1,0 +1,31 @@
+.caption {
+    font-size: $caption-font;
+    font-weight: $secondary-font;
+    margin: 0 0 30px;
+}
+
+@media screen and (max-width: 1024px) {
+    .caption {
+        font-size: $list-font;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .caption {
+        font-size: $paragraph-font;
+        margin: 0 0 20px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .caption {
+        font-size: $base-font;
+        margin: 0 0 5px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .caption {
+        font-size: $menu-font;
+    }
+}

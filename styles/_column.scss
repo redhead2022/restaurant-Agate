@@ -1,0 +1,182 @@
+.column {
+    &--red {
+        @include row-flex-column(48px);
+        &::before {
+            content: "HOT!";
+            @include column-icon($hot-color);
+        }
+    }
+    &--green {
+        @include row-flex-column(48px);
+        &::before {
+            content: "NEW!";
+            @include column-icon($new-color);
+        }
+    }
+    &--yellow {
+        @include row-flex-column(0);
+        &::before {
+            content: "HIT!";
+            @include column-icon($hit-color);
+        }
+    }
+    &__image {
+        margin-bottom: 35px;
+    }
+    &__subtitle {
+        font-size: $paragraph-font;
+        margin-bottom: 15px;
+    }
+    &__description {
+        @include description-size($description-font, $light-font);
+        line-height: 23px;
+        color: $primary-color;
+        margin-bottom: 15px;
+    }
+    &__cost {
+        font-size: $description-font;
+        font-weight: $secondary-font;
+        line-height: 23px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .column {
+        &--red {
+            @include row-flex-column(92px);
+        }
+        &--green {
+            @include row-flex-column(92px);
+        }
+        &__image {
+            margin-bottom: 15px;
+        }
+        &__subtitle {
+            font-size: $base-font;
+        }
+        &__description {
+            @include description-size($cost-small, $light-font);
+            line-height: 19px;
+            margin-bottom: 17px;
+        }
+        &__cost {
+            font-size: $cost-small;
+            line-height: 19px;
+        }
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .column {
+        &--red {
+            @include row-flex-column(30px);
+        }
+        &--green {
+            @include row-flex-column(30px);
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .column {
+        &--red {
+            @include row-flex-column(0px);
+            margin-bottom: 58px;
+        }
+        &--green {
+            @include row-flex-column(0px);
+            margin-bottom: 58px;
+        }
+        &__image {
+            margin: 0 24px 0 0;
+        }
+        &__text {
+            max-width: 348px;
+        }
+        &__subtitle {
+            font-size: $base-font;
+            margin-bottom: 20px;
+        }
+        &__description {
+            @include description-size($button-font, $light-font);
+            line-height: 25px;
+            margin-bottom: 20px;
+        }
+        &__cost {
+            font-size: $button-font;
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .column {
+        &:not(:last-child) {
+            margin-bottom: 65px;
+        }
+        &__subtitle {
+            font-size: $description-font;
+            margin-bottom: 5px;
+        }
+        &__description {
+            @include description-size($description-font, $light-font);
+            margin-bottom: 5px;
+        }
+        &__cost {
+            font-size: $description-font;
+        }
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .column {
+        &__subtitle,
+        &__description,
+        &__cost {
+            font-size: $button-middle;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        &__text {
+            max-width: 300px;
+        }
+        &__subtitle,
+        &__description,
+        &__cost {
+            font-size: $icon-font;
+            line-height: 17px;
+        }
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .column {
+        &__text {
+            max-width: 250px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .column {
+        &__text {
+            max-width: 200px;
+        }
+        &__subtitle,
+        &__description,
+        &__cost {
+            font-size: $icon-small;
+            line-height: 11px;
+        }
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .column {
+        &__text {
+            max-width: 150px;
+        }
+    }
+}

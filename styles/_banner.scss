@@ -1,0 +1,74 @@
+.banner {
+    padding: 218px 0 185px;
+    &__title {
+        max-width: 914px;
+        font-size: $title-font;
+        font-weight: $secondary-font;
+        line-height: 103px;
+        margin: 0 auto 35px;
+    }
+    &__description {
+        line-height: 31px;
+        margin: 0 auto 60px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .banner {
+        padding: 183px 0 153px;
+        &__title {
+            max-width: 697px;
+            font-size: $rest-font;
+            line-height: 73px;
+        }
+        &__description {
+            line-height: 23px;
+            margin: 0 auto 63px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        padding: 171px 0 99px;
+        &__title {
+            max-width: 329px;
+            font-size: $logo-font;
+            line-height: 58px;
+        }
+        &__description {
+            margin: 0 auto 66px;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .banner {
+        padding: 100px 0 60px;
+        &__description {
+            font-size: $base-font;
+        }
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .banner {
+        padding: 90px 0 50px;
+        &__title {
+            font-size: $caption-font;
+            line-height: 48px;
+        }
+        &__description {
+            font-size: $button-font;
+        }
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .banner {
+        padding: 80px 0 50px;
+        &__description {
+            max-width: 370px;
+        }
+    }
+}

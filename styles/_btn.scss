@@ -1,0 +1,19 @@
+.btn {
+    &--white {
+        @include btn-color($base-color, $base-color);
+        &:hover {
+            color: $logo-color;
+            background-color: $menu-border-color;
+            border-color: $logo-color;
+            transition: all 2s linear .5s;
+        }
+    }
+    &--black {
+        @include btn-color($logo-color, $logo-color);
+        &:hover {
+            color: $base-color;
+            background-color: $contacts-color;
+            transition: all 2s linear .5s;
+        }
+    }
+}

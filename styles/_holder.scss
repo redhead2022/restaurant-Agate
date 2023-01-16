@@ -1,0 +1,53 @@
+.holder {
+    background: $holder-color;
+    padding: 100px 0;
+    &__description {
+        @include description-size($paragraph-font, $light-font);
+        max-width: 941px;
+        line-height: 41px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .holder {
+        padding: 80px 0px;
+        &__description {
+            @include description-size($menu-font, $light-font);
+            max-width: 602px;
+            line-height: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .holder {
+        padding: 70px 0;
+        &__description {
+            @include description-size($button-font, $light-font);
+            max-width: 541px;
+            line-height: 27px;
+        }
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .holder {
+        padding: 60px 0;
+        &__description {
+            max-width: 500px;
+            line-height: 23px;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .holder {
+        padding: 30px 0;
+        &__description {
+            @include description-size($button-middle, $light-font);
+            max-width: 350px;
+            line-height: 16px;
+        }
+    }
+}
