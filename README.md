@@ -6,7 +6,7 @@ Welcome to my page!
 Project includes:
 - HTML;
 - CSS;
-- SCC.
+- SCSS.
 
 This website is my first project.
 The project is flexible and users can use it on all devices.
